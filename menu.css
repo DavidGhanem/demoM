@@ -1,0 +1,76 @@
+:root{
+    --baseColor :#ffffff;
+    --baseVariant: #ff0000;
+}
+
+.darkmode{
+    --baseColor:#1e1e1e;
+    --baseVariant: #490808;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    width: min(75%,900px);
+}
+
+body{
+    background-color: var(--baseColor);
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+    border: 1px solid black;
+    width:100%
+}
+
+.navbar{
+    width:98%
+}
+
+.navUList{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%
+}
+#theme-switch {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--baseVariant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#theme-switch img {
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#theme-switch img:last-child {
+    opacity: 0;
+}
+
+.darkmode #theme-switch img:first-child {
+    opacity: 0;
+}
+
+.darkmode #theme-switch img:last-child {
+    opacity: 1;
+}
