@@ -3,26 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./menu.css" />
     <title>DemoMenu</title>
   </head>
   <body>
-    <section class="wrapper">   
-    <header>
-      <nav class="navbar">
-        <ul class="navUList">
-            <li><button id="theme-switch">
-                <img src="./dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz48.svg" alt="darkMode">
-                <img src="./light_mode_24dp_E3E3E3_FILL1_wght300_GRAD0_opsz48.svg" alt="lightMode">
-            </button></li>
-            <li><img src="" alt="Logo Here" class="logo"/></li>
+    <section class="wrapper">
+      <header>
+        <nav class="navbar">
+          <ul class="navUList">
+            <li>
+              <button id="theme-switch">
+                <img
+                  src="./dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz48.svg"
+                  alt="darkMode"
+                />
+                <img
+                  src="./light_mode_24dp_E3E3E3_FILL1_wght300_GRAD0_opsz48.svg"
+                  alt="lightMode"
+                />
+              </button>
+            </li>
+            <li><img src="" alt="Logo Here" class="logo" /></li>
             <li><p>chi</p></li>
-        </ul>
-        
-    </nav>
-</section> 
-    </header>
+          </ul>
+        </nav>
+      </header>
+      <section class="foodTypes">
+        <button class="types" id="Appetizers">
+          <!--1-->
+          <p>Appetizers</p>
+        </button>
+        <button class="types" id="Salads & Soups">
+          <!--2-->
+          <p>Salads & Soups</p>
+        </button>
+        <button class="types" id="Sandwiches & Wraps">
+          <!--3-->
+          <p>Sandwiches & Wraps</p>
+        </button>
+        <button class="types" id="Burgers & Sliders">
+          <!--4-->
+          <p>Burgers & Sliders</p>
+        </button>
+        <button class="types" id="Main Dishes">
+          <!--5-->
+          <p>Main Dishes</p>
+        </button>
+        <button class="types" id="Side Dishes">
+          <!--6-->
+          <p>Side Dishes</p>
+        </button>
+        <button class="types" id="Pizza & Flatbreads">
+          <!--7-->
+          <p>Pizza & Flatbreads</p>
+        </button>
+        <button class="types" id="Seafood">
+          <!--8-->
+          <p>Seafood</p>
+        </button>
+        <button class="types" id="Pasta & Rice Dishes">
+          <!--9-->
+          <p>Pasta & Rice Dishes</p>
+        </button>
+        <button class="types" id="Vegetarian & Vegan">
+          <!--10-->
+          <p>Vegetarian & Vegan</p>
+        </button>
+        <button class="types" id="Desserts">
+          <!--11-->
+          <p>Desserts</p>
+        </button>
+        <button class="types" id="Beverages">
+          <!--12-->
+          <p>Beverages</p>
+        </button>
+      </section>
+      <main class="foodLists">
+        <section class="foodSection">
+          <h3 class="foodSectionName">Appetizers</h3>
+          <section class="dishes">
+            <div class="dish">Bruschetta<span class="price">10$</span></div>
+            <div class="dish">Mozzarella Sticks<span class="price">10$</span></div>
+            <div class="dish">Chicken Wings<span class="price">8$</span></div>
+            <div class="dish">Spring Rolls<span class="price">6$</span></div>
+            <div class="dish">Nachos<span class="price">5$</span></div>
+          </section>
+        </section>
+
+
+
+
+
+
+      </main>
+    </section>
 
     <script type="text/javascript" src="menu.js" defer></script>
   </body>

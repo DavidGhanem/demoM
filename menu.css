@@ -1,11 +1,17 @@
 :root{
     --baseColor :#ffffff;
     --baseVariant: #ff0000;
+    --white: #ffffff;
+    --black: #000000;
+    --hoveredText: #c8c8c8f0;
 }
 
 .darkmode{
     --baseColor:#1e1e1e;
     --baseVariant: #490808;
+    --white: #000000;
+    --black: #ffffff;
+    --hoveredText: #2e2e2ea0;
 }
 
 
@@ -13,10 +19,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .wrapper{
-    width: min(75%,900px);
+    width: min(95%,900px);
 }
 
 body{
@@ -31,7 +38,7 @@ header{
     display: flex;
     justify-content: center;
     padding: 2em 0;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     width:100%
 }
 
@@ -45,6 +52,13 @@ header{
     justify-content: space-between;
     width: 100%
 }
+
+.navUList>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #theme-switch {
     height: 40px;
     width: 40px;
@@ -74,3 +88,95 @@ header{
 .darkmode #theme-switch img:last-child {
     opacity: 1;
 }
+
+.foodTypes{
+    border: 1px solid var(--black);
+    border-top: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr)); /* Responsive grid */
+    gap: 10px; /* Adds spacing between items */
+    padding: 10px;
+}
+
+.types{
+    background-color: var(--baseColor);
+    color: var(--black);
+    border: 1px solid var(--black);
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+}
+
+.types:hover{
+    background-color:var(--hoveredText);
+}
+
+.foodLists{
+    display: flex;
+    padding: clamp(10px, 2vw, 20px);
+    justify-content: start;
+    border: 1px solid var(--black);
+    border-top: none;
+}
+
+.foodSection{
+    width: 100%;
+}
+
+.foodSectionName{
+    position:relative;
+    font-weight: bold;
+    padding-bottom: clamp(15px, 2vw, 30px);
+    color: var(--black)
+}
+
+.foodSectionName::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 102%;
+    background-color: var(--black);
+    top:25px;
+    left:-7px;
+
+}
+
+.dishes{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(6px, 2vw, 15px);
+    color: var(--black)
+}
+
+.dish{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    width:2em
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    body{
+        background-color: var(--baseColor);
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+  }
