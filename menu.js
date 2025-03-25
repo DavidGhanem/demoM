@@ -17,3 +17,7 @@ function disableDarkMode() {
     document.body.classList.remove('darkmode');
     localStorage.removeItem('darkmode'); // Remove from localStorage
 }
+
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.classList.remove('dark'); // Disable dark mode manually
+}
