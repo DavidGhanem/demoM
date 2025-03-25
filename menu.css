@@ -184,7 +184,7 @@ header{
   @media (prefers-color-scheme: light) {
     :root {
         color-scheme: light !important; /* Forces light theme */
-        background-color: white !important;
-        color: black !important;
+        background-color: var(--baseColor) !important;
+        color: var(--black) !important;
     }
 }
